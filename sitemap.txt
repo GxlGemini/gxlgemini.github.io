@@ -1,3 +1,4 @@
+https://gxlgemini.github.io/about.html
 https://gxlgemini.github.io/2024/07/02/%E8%AE%B0%E5%BD%95/life/
 https://gxlgemini.github.io/dl.html
 https://gxlgemini.github.io/2024/07/19/%E8%AE%B0%E5%BD%95/%E7%9F%A5%E8%A1%8C%E5%90%88%E4%B8%80/
@@ -11,7 +12,6 @@ https://gxlgemini.github.io/musics/index.html
 https://gxlgemini.github.io/404.html
 https://gxlgemini.github.io/donate.html
 https://gxlgemini.github.io/daily.html
-https://gxlgemini.github.io/about.html
 https://gxlgemini.github.io/archive.html
 https://gxlgemini.github.io/py.html
 https://gxlgemini.github.io/photo.html
