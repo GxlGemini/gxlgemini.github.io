@@ -1,3 +1,4 @@
+https://gxlgemini.github.io/2024/09/24/%E8%AE%B0%E5%BD%95/%E6%90%AD%E5%BB%BAgitee%E5%9B%BE%E5%BA%8A/
 https://gxlgemini.github.io/2024/07/19/%E8%AE%B0%E5%BD%95/%E7%9F%A5%E8%A1%8C%E5%90%88%E4%B8%80/
 https://gxlgemini.github.io/about.html
 https://gxlgemini.github.io/2024/07/02/%E8%AE%B0%E5%BD%95/life/
@@ -16,9 +17,9 @@ https://gxlgemini.github.io/archive.html
 https://gxlgemini.github.io/py.html
 https://gxlgemini.github.io/photo.html
 https://gxlgemini.github.io/
-https://gxlgemini.github.io/tags/test/
-https://gxlgemini.github.io/tags/life/
 https://gxlgemini.github.io/tags/develop/
+https://gxlgemini.github.io/tags/life/
+https://gxlgemini.github.io/tags/test/
+https://gxlgemini.github.io/categories/%E8%AE%B0%E5%BD%95/
 https://gxlgemini.github.io/categories/%E4%B9%90%E8%B6%A3/
 https://gxlgemini.github.io/categories/%E7%94%9F%E6%B4%BB/
-https://gxlgemini.github.io/categories/%E8%AE%B0%E5%BD%95/
