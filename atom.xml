@@ -6,7 +6,7 @@
   <link href="https://gxlgemini.github.io/atom.xml" rel="self"/>
   
   <link href="https://gxlgemini.github.io/"/>
-  <updated>2024-09-24T09:34:45.629Z</updated>
+  <updated>2024-09-24T09:42:08.347Z</updated>
   <id>https://gxlgemini.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://gxlgemini.github.io/2024/09/24/%E8%AE%B0%E5%BD%95/%E6%90%AD%E5%BB%BAgitee%E5%9B%BE%E5%BA%8A/"/>
     <id>https://gxlgemini.github.io/2024/09/24/%E8%AE%B0%E5%BD%95/%E6%90%AD%E5%BB%BAgitee%E5%9B%BE%E5%BA%8A/</id>
     <published>2024-09-24T09:34:16.000Z</published>
-    <updated>2024-09-24T09:34:45.629Z</updated>
+    <updated>2024-09-24T09:42:08.347Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="搭建gitee图床-记录"><a href="#搭建gitee图床-记录" class="headerlink" title="搭建gitee图床-记录"></a>搭建gitee图床-记录</h3><blockquote><p> 下载软件  node.js &#x2F; git  picgo &#x2F; 配置好git全局信息<br> 软件下载地址：picgo:<a href="https://picgo.github.io/PicGo-Doc/zh/guide/#picgo-is-here">https://picgo.github.io/PicGo-Doc/zh/guide/#picgo-is-here</a><br>                   git:<a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a><br>                   node.js:<a href="https://nodejs.org/en/download/prebuilt-installer/current">https://nodejs.org/en/download/prebuilt-installer/current</a></p></blockquote><p><strong>git配置的话可以前往gitee项目中找一下命令。</strong><br><img src="https://gitee.com/gxlgemini/mypicture/raw/master/img/1.webp"></p><ul><li>picgo软件点击插件设置下载<font color='red'><strong>gitee-uploader.</strong></font>  如果下载gitee 可能会上传不了。（不晓得麻子情况）</li></ul><p><img onerror="imgOnError(this);" data-fancybox="gallery" src="https://gitee.com/gxlgemini/mypicture/raw/master/img/3.webp" alt="3" data-caption="3" loading="lazy"></p><ul><li><p>然后前往gitee新建仓库，创建私人令牌即可<img onerror="imgOnError(this);" data-fancybox="gallery" src="https://gitee.com/gxlgemini/mypicture/raw/master/img/5.webp" alt="5" data-caption="5" loading="lazy"></p></li><li><p>最后配置picgo信息</p><blockquote><ul><li>branch :分支，这里填master</li><li>token: 填码云私人令牌，下面介绍生成方法</li><li>path: 图片在仓库中的存储路径，这里我们存储在img</li></ul></blockquote><p><img onerror="imgOnError(this);" data-fancybox="gallery" src="https://gitee.com/gxlgemini/mypicture/raw/master/img/4.webp" alt="4" data-caption="4" loading="lazy"></p></li><li><p>最后就可以愉快得上传图片了</p></li></ul><p><img onerror="imgOnError(this);" data-fancybox="gallery" src="https://gitee.com/gxlgemini/mypicture/raw/master/img/6.webp" alt="6" data-caption="6" loading="lazy"></p><ul><li><p>搭配typora使用</p><p><img onerror="imgOnError(this);" data-fancybox="gallery" src="https://gitee.com/gxlgemini/mypicture/raw/master/img/7.webp" alt="7" data-caption="7" loading="lazy"></p></li></ul><hr><p>完！</p>]]></content>
     
