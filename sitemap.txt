@@ -1,9 +1,9 @@
+https://gxlgemini.github.io/2024/02/01/%E8%AE%B0%E5%BD%95/2024%E6%96%B0%E7%9A%84%E4%B8%80%E5%B9%B4/
 https://gxlgemini.github.io/2024/09/24/%E8%AE%B0%E5%BD%95/%E6%90%AD%E5%BB%BAgitee%E5%9B%BE%E5%BA%8A/
 https://gxlgemini.github.io/2024/07/19/%E8%AE%B0%E5%BD%95/%E7%9F%A5%E8%A1%8C%E5%90%88%E4%B8%80/
 https://gxlgemini.github.io/about.html
 https://gxlgemini.github.io/2024/07/02/%E8%AE%B0%E5%BD%95/life/
 https://gxlgemini.github.io/dl.html
-https://gxlgemini.github.io/2024/02/01/%E8%AE%B0%E5%BD%95/2024%E6%96%B0%E7%9A%84%E4%B8%80%E5%B9%B4/
 https://gxlgemini.github.io/2023/12/05/%E5%BC%80%E5%8F%91/webp-img/
 https://gxlgemini.github.io/2023/09/18/%E5%BC%80%E5%8F%91/test/
 https://gxlgemini.github.io/2023/12/05/%E5%BC%80%E5%8F%91/giscus%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/
@@ -18,8 +18,8 @@ https://gxlgemini.github.io/py.html
 https://gxlgemini.github.io/photo.html
 https://gxlgemini.github.io/
 https://gxlgemini.github.io/tags/develop/
-https://gxlgemini.github.io/tags/life/
 https://gxlgemini.github.io/tags/test/
+https://gxlgemini.github.io/tags/life/
 https://gxlgemini.github.io/categories/%E8%AE%B0%E5%BD%95/
 https://gxlgemini.github.io/categories/%E4%B9%90%E8%B6%A3/
 https://gxlgemini.github.io/categories/%E7%94%9F%E6%B4%BB/
