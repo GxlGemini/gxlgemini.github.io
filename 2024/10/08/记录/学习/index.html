@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="zh"><head>
+<title>学习本质 - 雨西</title>
+<meta charset="UTF-8">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta name="description" content="我只能说很强，应当反复观摩！     [!CAUTION] 以下是乱七八糟的记录 Hexo博客文章置顶实现方法一：通过文章的 sticky 属性实现置顶 编辑文章的 Front Matter在需要置顶的文章头部添加 sticky 属性，数值越大，优先级越高。例子如下： ---title: 文章标题date: 2024-10-08sticky: 1  # 数值越大，优先级越高---  方法二：使用">
+<meta property="og:type" content="article">
+<meta property="og:title" content="学习本质">
+<meta property="og:url" content="https://gxlgemini.github.io/2024/10/08/%E8%AE%B0%E5%BD%95/%E5%AD%A6%E4%B9%A0/index.html">
+<meta property="og:site_name" content="雨西">
+<meta property="og:description" content="我只能说很强，应当反复观摩！     [!CAUTION] 以下是乱七八糟的记录 Hexo博客文章置顶实现方法一：通过文章的 sticky 属性实现置顶 编辑文章的 Front Matter在需要置顶的文章头部添加 sticky 属性，数值越大，优先级越高。例子如下： ---title: 文章标题date: 2024-10-08sticky: 1  # 数值越大，优先级越高---  方法二：使用">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gitee.com/gxlgemini/mypicture/raw/master/img/xuexi.webp">
+<meta property="og:image" content="https://gitee.com/gxlgemini/mypicture/raw/master/img/xuexi12121.webp">
+<meta property="og:image" content="https://gitee.com/gxlgemini/mypicture/raw/master/img/xuexi121.webp">
+<meta property="article:published_time" content="2024-10-08T09:34:16.000Z">
+<meta property="article:modified_time" content="2024-10-30T09:30:24.577Z">
+<meta property="article:author" content="雨西">
+<meta property="article:tag" content="test">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/gxlgemini/mypicture/raw/master/img/xuexi.webp">
+
+<link rel="stylesheet" href="/lib/fancybox/fancybox.css">
+<link rel="stylesheet" href="/lib/mdui_043tiny/mdui.css">
+
+
+<link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1733386499179">
+
+<link rel="stylesheet" href="/css/style.css?v=1733386499179">
+
+
+
+
+    
+        <link rel="stylesheet" href="/custom.css?v=1733386499179">
+    
+
+
+
+<script src="/lib/mdui_043tiny/mdui.js" async></script>
+<script src="/lib/fancybox/fancybox.umd.js" async></script>
+<script src="/lib/lax.min.js" async></script>
+
+
+<script async src="/js/app.js?v=1733386499179"></script>
+
+ 
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?9f2233dc1e2055195de270adc76e7459";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="雨西" type="application/atom+xml">
+</head><body class="nexmoe mdui-drawer-body-left"><div id="nexmoe-background"><div class="nexmoe-bg" style="background-image: url(https://i.dawnlab.me/b5a7e61560facdd5b8aa9683fce147d7.png)"></div><div class="mdui-appbar mdui-shadow-0"><div class="mdui-toolbar"><a class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: &#039;#drawer&#039;, swipe: true}" title="menu"><i class="mdui-icon nexmoefont icon-menu"></i></a><div class="mdui-toolbar-spacer"></div><a class="mdui-btn mdui-btn-icon" href="/" title="雨西"><img src="https://s21.ax1x.com/2024/07/25/pkbM8Rs.webp" alt="雨西"></a></div></div></div><div id="nexmoe-header"><div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="/" title="雨西">
+            <img src="https://s21.ax1x.com/2024/07/25/pkbM8Rs.webp" alt="雨西" alt="雨西">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span>文章</span>9</div>
+        <div><span>标签</span>3</div>
+        <div><span>分类</span>3</div>
+    </div>
+    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/" title="回到首页">
+            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
+            <div class="mdui-list-item-content">
+                回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/archive.html" title="岁月神偷">
+            <i class="mdui-list-item-icon nexmoefont icon-container"></i>
+            <div class="mdui-list-item-content">
+                岁月神偷
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/py.html" title="友人帐！">
+            <i class="mdui-list-item-icon nexmoefont icon-calendar-fill"></i>
+            <div class="mdui-list-item-content">
+                友人帐！
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/dl.html" title="Tools！">
+            <i class="mdui-list-item-icon nexmoefont icon-steam"></i>
+            <div class="mdui-list-item-content">
+                Tools！
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/donate.html" title="请我喝茶">
+            <i class="mdui-list-item-icon nexmoefont icon-coffee"></i>
+            <div class="mdui-list-item-content">
+                请我喝茶
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/daily.html" title="每日一冲">
+            <i class="mdui-list-item-icon nexmoefont icon-dribbble"></i>
+            <div class="mdui-list-item-content">
+                每日一冲
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/photo.html" title="流年独照">
+            <i class="mdui-list-item-icon nexmoefont icon-areachart"></i>
+            <div class="mdui-list-item-content">
+                流年独照
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/about.html" title="About Me">
+            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+            <div class="mdui-list-item-content">
+                About Me
+            </div>
+        </a>
+        
+    </div>
+    
+    
+        
+        <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-search">
+         
+            <form id="search_form" action_e="https://cn.bing.com/search?q=site:nexmoe.com" onsubmit="return search();">
+                <label><input id="search_value" name="q" type="search" placeholder="搜索"></label>
+            </form>
+         
+    </div>
+</div>
+
+
+
+
+    
+        
+        <div class="nexmoe-widget-wrap">
+	<div class="nexmoe-widget nexmoe-social">
+		<a
+			class="mdui-ripple"
+			href="http://wpa.qq.com/msgrd?v=3&uin=2089827425&site=qq&menu=yes"
+			target="_blank"
+			mdui-tooltip="{content: 'QQ群'}"
+			style="
+				color: rgb(249, 174, 8);
+				background-color: rgba(249, 174, 8, .1);
+			"
+		>
+			<i
+				class="nexmoefont icon-QQ"
+			></i> </a
+		><a
+			class="mdui-ripple"
+			href="https://space.bilibili.com/387585173"
+			target="_blank"
+			mdui-tooltip="{content: '哔哩哔哩'}"
+			style="
+				color: rgb(231, 106, 141);
+				background-color: rgba(231, 106, 141, .1);
+			"
+		>
+			<i
+				class="nexmoefont icon-bilibili"
+			></i> </a
+		><a
+			class="mdui-ripple"
+			href="https://github.com/GxlGemini"
+			target="_blank"
+			mdui-tooltip="{content: 'GitHub'}"
+			style="
+				color: rgb(25, 23, 23);
+				background-color: rgba(25, 23, 23, .1);
+			"
+		>
+			<i
+				class="nexmoefont icon-github"
+			></i> </a
+		><a
+			class="mdui-ripple"
+			href="https://www.zhihu.com/people/bo-lin-91-37"
+			target="_blank"
+			mdui-tooltip="{content: '知乎'}"
+			style="
+				color: rgb(30, 136, 229);
+				background-color: rgba(30, 136, 229, .1);
+			"
+		>
+			<i
+				class="nexmoefont icon-zhihu"
+			></i> </a
+		><a
+			class="mdui-ripple"
+			href="https://twitter.com/linxiaobaigxl"
+			target="_blank"
+			mdui-tooltip="{content: 'Twitter'}"
+			style="
+				color: rgb(59, 151, 239);
+				background-color: rgba(59, 151, 239, .1);
+			"
+		>
+			<i
+				class="nexmoefont icon-twitter"
+			></i> </a
+		><a
+			class="mdui-ripple"
+			href="/atom.xml"
+			target="_blank"
+			mdui-tooltip="{content: 'RSS'}"
+			style="
+				color: rgb(247, 132, 34);
+				background-color: rgba(247, 132, 34, .1);
+			"
+		>
+			<i
+				class="nexmoefont icon-rss"
+			></i> </a
+		>
+	</div>
+</div>
+
+    
+        
+        
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">文章分类</h3>
+    <div class="nexmoe-widget">
+
+      <ul class="category-list">
+
+        
+
+
+        
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/乐趣/">乐趣</a>
+          <span class="category-list-count">3</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/生活/">生活</a>
+          <span class="category-list-count">2</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/记录/">记录</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+      </ul>
+
+    </div>
+  </div>
+
+
+    
+        
+        
+  <div class="nexmoe-widget-wrap">
+    <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
+      <a href="/tags/develop/" style="font-size: 15px;">develop</a> <a href="/tags/life/" style="font-size: 10px;">life</a> <a href="/tags/test/" style="font-size: 20px;">test</a>
+    </div>
+    
+      <script>
+        var maxTagcloud = parseInt(17);
+        var tags_length = parseInt(3);
+        var tags_arr = [];
+        for(var i = 0; i < tags_length; i++){
+          tags_arr.push(i);
+        }
+        tags_arr.sort(function (l, r) {
+          return Math.random() > 0.5 ? -1 : 1;
+        });
+        tags_arr = tags_arr.slice(0, maxTagcloud < tags_length ? tags_length - maxTagcloud : 0);
+        for(var tag_i = 0; tag_i < tags_arr.length; tag_i++){
+          document.getElementById("randomtagcloud").children[tags_arr[tag_i]].style.display = 'none';
+        }
+      </script>
+    
+  </div>
+
+    
+        
+        
+        
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">文章归档</h3>
+    <div class="nexmoe-widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/">2024</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/">2023</a><span class="archive-list-count">4</span></li></ul>
+    </div>
+  </div>
+
+
+
+    
+        
+        
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">最新文章</h3>
+    <div class="nexmoe-widget">
+      <ul>
+        
+          <li>
+            <a href="/2024/10/08/%E8%AE%B0%E5%BD%95/%E5%AD%A6%E4%B9%A0/">学习本质</a>
+          </li>
+        
+          <li>
+            <a href="/2024/09/24/%E8%AE%B0%E5%BD%95/%E6%90%AD%E5%BB%BAgitee%E5%9B%BE%E5%BA%8A/">搭建gitee图床-记录</a>
+          </li>
+        
+          <li>
+            <a href="/2024/07/19/%E8%AE%B0%E5%BD%95/%E7%9F%A5%E8%A1%8C%E5%90%88%E4%B8%80/">知行合一</a>
+          </li>
+        
+          <li>
+            <a href="/2024/07/02/%E8%AE%B0%E5%BD%95/life/">life！！！</a>
+          </li>
+        
+          <li>
+            <a href="/2024/02/01/%E8%AE%B0%E5%BD%95/2024%E6%96%B0%E7%9A%84%E4%B8%80%E5%B9%B4/">2024开年</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+        
+        <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-link">
+		<ul>
+        
+            <li>
+                <a href="https://github.com/GxlGemini" target="_blank" >
+                    <img src="https://gitee.com/gxlgemini/mypicture/raw/master/img/kunkun.gif" alt="广告位"></img>
+                    <p>广告位</p>
+                </a>
+            </li>
+        
+		</ul>
+    </div>
+</div>
+<style>
+.nexmoe-widget-wrap .nexmoe-link ul li a {
+    text-align : center;
+}
+.nexmoe-widget-wrap .nexmoe-link ul li a img {
+    max-width : 100%;
+}
+.nexmoe-widget-wrap .nexmoe-link ul li a p {
+    margin: 10px 0;
+}
+</style>
+
+    
+   
+    <div class="nexmoe-copyright">
+        &copy; 2024 雨西
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
+        <br><a target="_blank" href="https://beian.miit.gov.cn/">湘ICP备5820238666号</a>
+
+    </div>
+</div><!-- .nexmoe-drawer --></div><div id="nexmoe-content"><div class="nexmoe-primary"><div class="nexmoe-post">
+  <article>
+    
+        <div class="nexmoe-post-cover absolute" style="padding-top: 62.5%;"> 
+            <img src="https://s21.ax1x.com/2024/10/08/pAGswBn.webp" alt="学习本质" loading="lazy">
+            <h1>学习本质</h1>
+        </div>
+    
+    
+    <div class="nexmoe-post-meta">
+    <div class="nexmoe-rainbow">
+        <a class="nexmoefont icon-calendar-fill">2024年10月08日</a>
+        
+            <a class="nexmoefont icon-appstore-fill -link" href="/categories/%E8%AE%B0%E5%BD%95/">记录</a>
+        
+        
+    </div>
+    
+    
+    
+    
+    
+</div>
+
+    <ul>
+<li><a href="">我只能说很强，应当反复观摩！</a></li>
+</ul>
+<p><img onerror="imgOnError(this);" data-fancybox="gallery" src="https://gitee.com/gxlgemini/mypicture/raw/master/img/xuexi.webp" alt="学习" data-caption="学习" loading="lazy"></p>
+<hr>
+<blockquote>
+<p>[!CAUTION]</p>
+<h2 id="以下是乱七八糟的记录"><a href="#以下是乱七八糟的记录" class="headerlink" title="以下是乱七八糟的记录"></a>以下是乱七八糟的记录</h2></blockquote>
+<h3 id="Hexo博客文章置顶实现"><a href="#Hexo博客文章置顶实现" class="headerlink" title="Hexo博客文章置顶实现"></a>Hexo博客文章置顶实现</h3><h3 id="方法一：通过文章的-sticky-属性实现置顶"><a href="#方法一：通过文章的-sticky-属性实现置顶" class="headerlink" title="方法一：通过文章的 sticky 属性实现置顶"></a>方法一：通过文章的 <code>sticky</code> 属性实现置顶</h3><ol>
+<li><p><strong>编辑文章的 Front Matter</strong><br>在需要置顶的文章头部添加 <code>sticky</code> 属性，数值越大，优先级越高。例子如下：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">文章标题</span><br><span class="hljs-attr">date:</span> <span class="hljs-number">2024-10-08</span><br><span class="hljs-attr">sticky:</span> <span class="hljs-number">1</span>  <span class="hljs-comment"># 数值越大，优先级越高</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="方法二：使用插件实现置顶"><a href="#方法二：使用插件实现置顶" class="headerlink" title="方法二：使用插件实现置顶"></a>方法二：使用插件实现置顶</h3><ol>
+<li><p><strong>安装 Hexo 插件</strong><br>可以使用插件 <code>hexo-generator-index-pin-top</code>，该插件可以通过 <code>sticky</code> 属性将文章置顶。</p>
+<p><strong>安装插件</strong>：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">npm install hexo-generator-index-pin-top --save<br></code></pre></td></tr></table></figure>
+</li>
+<li><p><strong>配置插件</strong><br>在 Hexo 根目录的 <code>_config.yml</code> 文件中，添加以下配置：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">index_generator:</span><br>  <span class="hljs-attr">path:</span> <span class="hljs-string">&#x27;&#x27;</span><br>  <span class="hljs-attr">per_page:</span> <span class="hljs-number">10</span><br>  <span class="hljs-attr">order_by:</span> <span class="hljs-string">-date</span><br></code></pre></td></tr></table></figure>
+</li>
+<li><p><strong>文章头部添加 <code>sticky</code> 属性</strong><br>和方法一一样，在需要置顶的文章头部添加 <code>sticky</code> 属性，设置数值。高优先级的文章会排在前面。</p>
+</li>
+<li><p><strong>重新生成和部署</strong>：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">hexo clean<br>hexo generate<br>hexo deploy<br></code></pre></td></tr></table></figure></li>
+</ol>
+<p>完成以上步骤后，文章将按照 <code>sticky</code> 属性的值进行排序并置顶。</p>
+<hr>
+<p><strong>刚好我这个主题默认就支持，直接sticky加上完事，非常完美。</strong></p>
+<hr>
+<blockquote>
+<p>解决centos7虚拟机桥接不能上网的问题：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/kkxwze/p/12763615.html">https://www.cnblogs.com/kkxwze/p/12763615.html</a></p>
+</blockquote>
+<p>0、在vmware虚拟机中：vmnet0对应桥接模式；vmnet1对应NAT模式；vmnet8对应仅主机模式。所以我直接添加一个vmnet0 桥接网络。centos7可以上网了。非常的哇塞！</p>
+<p><img onerror="imgOnError(this);" data-fancybox="gallery" src="https://gitee.com/gxlgemini/mypicture/raw/master/img/xuexi12121.webp" alt="1" data-caption="1" loading="lazy"></p>
+<p>安装vmware后，在网络适配器中会多出vmnet1和vmnet8两个网络适配器。</p>
+<p><strong>1、查看本地连接</strong></p>
+<p><strong>（1）属性中是否有“VMware Bridge Protocol”选项。如果没有，需要通过 安装——服务——添加——从磁盘安装——浏览——选择VMware安装目录下的netbridge.inf——确定——确定 来安装。安装后就会出现。<br>（2）该选项是否为选中状态，如果未选中，请选中。</strong></p>
+<p><img onerror="imgOnError(this);" data-fancybox="gallery" src="https://gitee.com/gxlgemini/mypicture/raw/master/img/xuexi121.webp" alt="2" data-caption="2" loading="lazy"></p>
+<hr>
+
+    
+  </article>
+
+  
+      
+    <div class="nexmoe-post-copyright">
+        <strong>本文作者：</strong>雨西<br>
+        <strong>本文链接：</strong><a href="https://gxlgemini.github.io/2024/10/08/%E8%AE%B0%E5%BD%95/%E5%AD%A6%E4%B9%A0/" title="https:&#x2F;&#x2F;gxlgemini.github.io&#x2F;2024&#x2F;10&#x2F;08&#x2F;%E8%AE%B0%E5%BD%95&#x2F;%E5%AD%A6%E4%B9%A0&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;gxlgemini.github.io&#x2F;2024&#x2F;10&#x2F;08&#x2F;%E8%AE%B0%E5%BD%95&#x2F;%E5%AD%A6%E4%B9%A0&#x2F;</a><br>
+        
+            <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+
+        
+    </div>
+
+
+  
+  
+  <div class="nexmoe-post-meta nexmoe-rainbow">
+   
+    
+        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/test/" rel="tag">test</a>
+    
+</div>
+  
+  
+    <script async src="/js/copy-codeblock.js?v=1733386499137"></script>
+  
+
+  
+      <div class="nexmoe-post-footer">
+          <br><a>看不了一点评论！！！！</a>
+
+      </div>
+  
+</div></div><div class="nexmoe-post-right">    <div class="nexmoe-fixed">
+        <div class="nexmoe-tool">
+
+            
+
+            
+            
+            <button class="mdui-fab catalog" style="overflow:unset;">
+                <i class="nexmoefont icon-i-catalog"></i>
+                <div class="nexmoe-toc">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A5%E4%B8%8B%E6%98%AF%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F%E7%9A%84%E8%AE%B0%E5%BD%95"><span class="toc-number">1.</span> <span class="toc-text">以下是乱七八糟的记录</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Hexo%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E7%BD%AE%E9%A1%B6%E5%AE%9E%E7%8E%B0"><span class="toc-number">1.1.</span> <span class="toc-text">Hexo博客文章置顶实现</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E4%B8%80%EF%BC%9A%E9%80%9A%E8%BF%87%E6%96%87%E7%AB%A0%E7%9A%84-sticky-%E5%B1%9E%E6%80%A7%E5%AE%9E%E7%8E%B0%E7%BD%AE%E9%A1%B6"><span class="toc-number">1.2.</span> <span class="toc-text">方法一：通过文章的 sticky 属性实现置顶</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E4%BA%8C%EF%BC%9A%E4%BD%BF%E7%94%A8%E6%8F%92%E4%BB%B6%E5%AE%9E%E7%8E%B0%E7%BD%AE%E9%A1%B6"><span class="toc-number">1.3.</span> <span class="toc-text">方法二：使用插件实现置顶</span></a></li></ol></li></ol>
+                </div>
+            </button>
+            
+
+            
+
+            <a href="#nexmoe-content" class="backtop toc-link" aria-label="Back To Top" title="top"><button class="mdui-fab mdui-ripple"><i class="nexmoefont icon-caret-top"></i></button></a>
+        </div>
+    </div>
+</div></div><div id="nexmoe-footer"><!--!--></div><div id="nexmoe-search-space"><div class="search-container"><div class="search-header"><div class="search-input-container"><input class="search-input" type="text" placeholder="搜索" onInput="sinput();"></div><a class="search-close" onclick="sclose();">×</a></div><div class="search-body"></div></div></div><div></div></body></html>
