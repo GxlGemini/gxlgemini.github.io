@@ -6,7 +6,7 @@
   <link href="https://gxlgemini.github.io/atom.xml" rel="self"/>
   
   <link href="https://gxlgemini.github.io/"/>
-  <updated>2024-10-30T09:30:24.577Z</updated>
+  <updated>2024-12-20T09:11:08.960Z</updated>
   <id>https://gxlgemini.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于NAS小记录</title>
+    <link href="https://gxlgemini.github.io/2024/12/02/%E8%AE%B0%E5%BD%95/%E5%85%B3%E4%BA%8ENAS%E5%B0%8F%E8%AE%B0%E5%BD%95/"/>
+    <id>https://gxlgemini.github.io/2024/12/02/%E8%AE%B0%E5%BD%95/%E5%85%B3%E4%BA%8ENAS%E5%B0%8F%E8%AE%B0%E5%BD%95/</id>
+    <published>2024-12-02T09:33:47.000Z</published>
+    <updated>2024-12-20T09:11:08.960Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>关于 NAS（Network Attached Storage）和局域网映射问题，</p><h3 id="1-什么是NAS？"><a href="#1-什么是NAS？" class="headerlink" title="1. 什么是NAS？"></a><strong>1. 什么是NAS？</strong></h3><p>NAS 是一种网络存储设备，它通过网络将存储设备连接到局域网（LAN），允许多台设备访问和共享文件。NAS 设备通常提供数据备份、文件共享、多媒体流媒体服务等功能，非常适合家庭或小型办公室使用。</p><hr><h3 id="2-局域网映射问题的概念"><a href="#2-局域网映射问题的概念" class="headerlink" title="2. 局域网映射问题的概念"></a><strong>2. 局域网映射问题的概念</strong></h3><p>局域网映射指的是将 NAS 的共享目录通过网络挂载到本地计算机，使其在文件管理器中显示为一个本地磁盘或文件夹，从而实现文件的快速访问和管理。</p><p>常见的映射方式包括：</p><ul><li><p><strong>基于 SMB&#x2F;CIFS 协议的映射</strong>（适用于 Windows、macOS、Linux）。</p></li><li><p><strong>基于 NFS 协议的映射</strong>（多用于 Linux 环境）。</p></li><li><p><strong>基于 WebDAV 的映射</strong>（适用于远程访问）。</p><ul><li><p>巧了刚好有一个软件alist+RaiDrive实现挂载百度网盘+阿里云盘。</p><p><img onerror="imgOnError(this);" data-fancybox="gallery" src="https://gitee.com/gxlgemini/mypicture/raw/master/img/2024/alist.webp" alt="alist" data-caption="alist" loading="lazy"></p><p><img onerror="imgOnError(this);" data-fancybox="gallery" src="https://gitee.com/gxlgemini/mypicture/raw/master/img/2024/raidrive.webp" alt="raidrive" data-caption="raidrive" loading="lazy"></p></li></ul></li></ul><hr><h3 id="3-局域网映射常见问题及解决方法"><a href="#3-局域网映射常见问题及解决方法" class="headerlink" title="3. 局域网映射常见问题及解决方法"></a><strong>3. 局域网映射常见问题及解决方法</strong></h3><p><strong>(1) 找不到 NAS 设备</strong></p><ul><li><strong>原因</strong>：可能是网络设置问题或广播包未到达设备。</li><li>解决方案：<ol><li>确保 NAS 和计算机在同一局域网（相同网段）。</li><li>检查路由器是否启用了隔离模式（Client Isolation）。</li><li>使用 NAS 提供的搜索工具（如 Synology 的 Synology Assistant）查找设备。</li></ol></li></ul><p><strong>(2) 无法访问共享目录</strong></p><ul><li><strong>原因</strong>：用户权限配置不正确或协议未启用。</li><li>解决方案：<ol><li>在 NAS 管理界面，确保 SMB&#x2F;CIFS 或其他协议已启用。</li><li>检查 NAS 的用户权限设置，确保分配了正确的访问权限。</li><li>在 Windows 上启用 SMB 1.0（如有必要，但注意 SMB 1.0 的安全风险）。</li></ol></li></ul><p><strong>(3) 映射后速度慢或中断</strong></p><ul><li><strong>原因</strong>：网络性能或设备配置问题。</li><li>解决方案：<ol><li>使用有线网络（千兆网）代替无线网络，提升传输速度。</li><li>在路由器中启用 QoS（Quality of Service）功能，优先保障 NAS 的流量。</li><li>检查 NAS 和电脑网卡的 MTU 设置是否匹配（通常为 1500）。</li></ol></li></ul><p><strong>(4) Windows 映射网络驱动器提示“无法连接”</strong></p><ul><li><strong>原因</strong>：可能是由于登录凭据问题。</li><li>解决方案：<ol><li>清除旧的网络凭据：<code>控制面板 -&gt; 凭据管理器 -&gt; Windows 凭据</code>，删除相关记录。</li><li>在映射时选择“使用其他凭据”并正确输入 NAS 用户名和密码。</li><li>确保 SMB 的版本设置在 NAS 和 Windows 中兼容。</li></ol></li></ul><p><strong>(5) 文件名乱码或显示异常</strong></p><ul><li><strong>原因</strong>：NAS 文件系统编码和操作系统编码不一致。</li><li>解决方案：<ol><li>在 NAS 的共享文件夹设置中，选择正确的字符集（例如 UTF-8）。</li><li>确保操作系统的语言和区域设置正确。</li></ol></li></ul><hr><h3 id="4-映射网络驱动器的具体步骤（以-Windows-为例）"><a href="#4-映射网络驱动器的具体步骤（以-Windows-为例）" class="headerlink" title="4. 映射网络驱动器的具体步骤（以 Windows 为例）"></a><strong>4. 映射网络驱动器的具体步骤（以 Windows 为例）</strong></h3><ol><li>打开文件资源管理器，点击“此电脑”。</li><li>点击“映射网络驱动器”。</li><li>选择驱动器号，并输入 NAS 的共享路径（如 <code>\\NAS_IP\共享文件夹</code>）。</li><li>勾选“使用其他凭据”，输入 NAS 的用户名和密码。</li><li>点击“完成”，即可完成映射。</li></ol><hr><h3 id="5-提高-NAS-和局域网映射性能的建议"><a href="#5-提高-NAS-和局域网映射性能的建议" class="headerlink" title="5. 提高 NAS 和局域网映射性能的建议"></a><strong>5. 提高 NAS 和局域网映射性能的建议</strong></h3><ol><li>硬件升级<ul><li>选择带有 SSD 缓存功能的 NAS 提高文件读取速度。</li><li>确保路由器支持千兆网络或 Wi-Fi 6。</li></ul></li><li>软件优化<ul><li>定期更新 NAS 固件以获得性能改进和新功能。</li><li>设置 RAID 提高数据读取速度（如 RAID 0 或 RAID 5）。</li></ul></li><li>安全性<ul><li>启用文件加密和防火墙，防止非法访问。</li><li>设置强密码并定期更换。</li></ul></li></ol><hr><blockquote><p><strong>以上都是我瞎扯蛋</strong></p></blockquote><p>完！</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="记录" scheme="https://gxlgemini.github.io/categories/%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="test" scheme="https://gxlgemini.github.io/tags/test/"/>
+    
+  </entry>
   
   <entry>
     <title>学习本质</title>
