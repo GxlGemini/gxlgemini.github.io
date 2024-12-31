@@ -1,0 +1,99 @@
+/* 修复 details 的上下间隙 */
+details {
+  margin: 20px 0; /* 保证每个折叠项之间有足够的间隙 */
+  border: none; /* 移除默认边框 */
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  padding: 0; /* 确保没有额外内边距 */
+}
+
+details:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.01);
+}
+
+/* summary 样式 */
+summary {
+  cursor: pointer;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff5f6d, #ffc371, #47d147, #4facfe, #6a11cb);
+  color: #fff;
+  user-select: none;
+  background-size: 300% 300%;
+  animation: rainbowAnimation 6s infinite linear;
+  margin: 0; /* 移除外边距 */
+  border: none; /* 移除默认边框 */
+  list-style: none; /* 移除列表样式 */
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+}
+
+/* 鼠标悬停时动画加速 */
+summary:hover {
+  animation-duration: 3s;
+}
+
+summary::marker {
+  content: none; /* 隐藏默认标记 */
+}
+
+/* 展开状态调整 */
+summary::before {
+  content: "➕";
+  margin-right: 10px;
+  font-size: 18px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+details[open] summary::before {
+  content: "➖";
+  transform: rotate(180deg);
+}
+
+/* 内容区样式 */
+details div {
+  margin-top: 15px; /* 内容和折叠项之间增加间隙 */
+  padding: 0; /* 移除内边距 */
+  font-size: 16px;
+  color: #444;
+  background: #fff;
+  line-height: 1.6;
+  border: none; /* 移除边框 */
+  animation: slideDown 0.3s ease-in-out;
+}
+
+/* 图片样式优化 */
+img {
+  display: block; /* 去除图片默认的 inline 间隙 */
+  width: 100%; /* 图片占满容器 */
+  margin: 0; /* 移除外边距 */
+  padding: 0; /* 移除内边距 */
+  border-radius: 8px; /* 圆角效果 */
+}
+
+/* 动态渐变背景动画 */
+@keyframes rainbowAnimation {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
