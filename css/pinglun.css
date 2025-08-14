@@ -1,0 +1,38 @@
+/* 针对 server-countdown 的样式 */
+        .server-countdown {
+            text-align: center; /* 内容居中 */
+            padding: 20px;
+            background: #f9f9f9; /* 浅灰背景 */
+            border-radius: 10px;
+            border: 1px solid #ddd; /* 灰色边框 */
+            font-family: Arial, sans-serif; /* 默认字体 */
+            font-size: 16px; /* 整体字体大小 */
+            color: #333; /* 字体颜色 */
+        }
+
+        .server-countdown .title {
+            font-size: 18px; /* 标题字体大小 */
+            font-weight: bold; /* 标题加粗 */
+            color: #555; /* 标题颜色 */
+            margin-bottom: 10px;
+        }
+
+        .server-countdown p {
+            display: inline-block; /* 倒计时块水平排列 */
+            margin: 5px 10px;
+            padding: 10px 15px;
+            font-size: 14px;
+            color: #333; /* 倒计时文字颜色 */
+            background: #fff; /* 白色背景 */
+            border: 1px solid #ddd; /* 边框颜色 */
+            border-radius: 5px; /* 圆角 */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 阴影 */
+            text-align: center;
+        }
+
+        .server-countdown p span {
+            display: block;
+            font-size: 20px; /* 数字部分更大 */
+            font-weight: bold; /* 数字加粗 */
+            color: #000; /* 数字颜色 */
+        }
