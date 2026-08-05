@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="zh"><head>
+<title>微软商店错误 0x800706D9 修复记录 - 雨西-蛋疼的世界！！！</title>
+<meta charset="UTF-8">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta name="description" content="微软商店错误 0x800706D9 修复记录一、故障现象在 Windows 10 微软商店下载 Windows Terminal 时提示： 出现问题请稍后再试错误代码：0x800706D9  系统版本： Windows 10 22H2OS 内部版本：19045.6466  二、原因分析官方确认错误代码 0x800706D9 表示系统所需的服务没有运行，或者服务配置异常。常见关联服务包括：  RPC">
+<meta property="og:type" content="article">
+<meta property="og:title" content="微软商店错误 0x800706D9 修复记录">
+<meta property="og:url" content="https://gxlgemini.github.io/2026/08/05/%E8%AE%B0%E5%BD%95/%E5%BE%AE%E8%BD%AF%E5%95%86%E5%BA%97%E9%94%99%E8%AF%AF%200x800706D9%20%E4%BF%AE%E5%A4%8D%E8%AE%B0%E5%BD%95/index.html">
+<meta property="og:site_name" content="雨西-蛋疼的世界！！！">
+<meta property="og:description" content="微软商店错误 0x800706D9 修复记录一、故障现象在 Windows 10 微软商店下载 Windows Terminal 时提示： 出现问题请稍后再试错误代码：0x800706D9  系统版本： Windows 10 22H2OS 内部版本：19045.6466  二、原因分析官方确认错误代码 0x800706D9 表示系统所需的服务没有运行，或者服务配置异常。常见关联服务包括：  RPC">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-08-05T02:43:16.000Z">
+<meta property="article:modified_time" content="2026-08-05T03:08:29.124Z">
+<meta property="article:author" content="雨西">
+<meta property="article:tag" content="test">
+<meta name="twitter:card" content="summary">
+
+<link rel="stylesheet" href="/lib/fancybox/fancybox.css">
+<link rel="stylesheet" href="/lib/mdui_043tiny/mdui.css">
+
+
+<link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1785899635741">
+
+<link rel="stylesheet" href="/css/style.css?v=1785899635741">
+
+
+
+
+    
+        <link rel="stylesheet" href="/custom.css?v=1785899635741">
+    
+
+
+
+<script src="/lib/mdui_043tiny/mdui.js" async></script>
+<script src="/lib/fancybox/fancybox.umd.js" async></script>
+<script src="/lib/lax.min.js" async></script>
+
+
+<script async src="/js/app.js?v=1785899635741"></script>
+
+ 
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?9f2233dc1e2055195de270adc76e7459";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="雨西-蛋疼的世界！！！" type="application/atom+xml">
+</head><body class="nexmoe mdui-drawer-body-left"><div id="nexmoe-background"><div class="nexmoe-bg" style="background-image: url(https://gitee.com/gxlgemini/mypicture/raw/master/img/2024/【哲风壁纸】一个人-海.webp)"></div><div class="mdui-appbar mdui-shadow-0"><div class="mdui-toolbar"><a class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: &#039;#drawer&#039;, swipe: true}" title="menu"><i class="mdui-icon nexmoefont icon-menu"></i></a><div class="mdui-toolbar-spacer"></div><a class="mdui-btn mdui-btn-icon" href="/" title="雨西"><img src="https://gitee.com/gxlgemini/mypicture/raw/master/img/2024/LOGO.webp" alt="雨西"></a></div></div></div><div id="nexmoe-header"><div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="/" title="雨西">
+            <img src="https://gitee.com/gxlgemini/mypicture/raw/master/img/2024/LOGO.webp" alt="雨西" alt="雨西">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span>文章</span>14</div>
+        <div><span>标签</span>4</div>
+        <div><span>分类</span>3</div>
+    </div>
+    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/" title="回到首页">
+            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
+            <div class="mdui-list-item-content">
+                回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/archive.html" title="岁月神偷">
+            <i class="mdui-list-item-icon nexmoefont icon-container"></i>
+            <div class="mdui-list-item-content">
+                岁月神偷
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/py.html" title="友人帐！">
+            <i class="mdui-list-item-icon nexmoefont icon-calendar-fill"></i>
+            <div class="mdui-list-item-content">
+                友人帐！
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/dl.html" title="Tools！">
+            <i class="mdui-list-item-icon nexmoefont icon-steam"></i>
+            <div class="mdui-list-item-content">
+                Tools！
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/donate.html" title="请我喝茶">
+            <i class="mdui-list-item-icon nexmoefont icon-coffee"></i>
+            <div class="mdui-list-item-content">
+                请我喝茶
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/daily.html" title="每日一冲">
+            <i class="mdui-list-item-icon nexmoefont icon-dribbble"></i>
+            <div class="mdui-list-item-content">
+                每日一冲
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/photo.html" title="流年独照">
+            <i class="mdui-list-item-icon nexmoefont icon-areachart"></i>
+            <div class="mdui-list-item-content">
+                流年独照
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/about.html" title="About Me">
+            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+            <div class="mdui-list-item-content">
+                About Me
+            </div>
+        </a>
+        
+    </div>
+    
+    
+        
+        <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-search">
+         
+            <form id="search_form" action_e="https://cn.bing.com/search?q=site:nexmoe.com" onsubmit="return search();">
+                <label><input id="search_value" name="q" type="search" placeholder="搜索"></label>
+            </form>
+         
+    </div>
+</div>
+
+
+
+
+    
+        
+        <div class="nexmoe-widget-wrap">
+	<div class="nexmoe-widget nexmoe-social">
+		<a
+			class="mdui-ripple"
+			href="http://wpa.qq.com/msgrd?v=3&uin=2089827425&site=qq&menu=yes"
+			target="_blank"
+			mdui-tooltip="{content: 'QQ群'}"
+			style="
+				color: rgb(249, 174, 8);
+				background-color: rgba(249, 174, 8, .1);
+			"
+		>
+			<i
+				class="nexmoefont icon-QQ"
+			></i> </a
+		><a
+			class="mdui-ripple"
+			href="https://space.bilibili.com/387585173"
+			target="_blank"
+			mdui-tooltip="{content: '哔哩哔哩'}"
+			style="
+				color: rgb(231, 106, 141);
+				background-color: rgba(231, 106, 141, .1);
+			"
+		>
+			<i
+				class="nexmoefont icon-bilibili"
+			></i> </a
+		><a
+			class="mdui-ripple"
+			href="https://github.com/GxlGemini"
+			target="_blank"
+			mdui-tooltip="{content: 'GitHub'}"
+			style="
+				color: rgb(25, 23, 23);
+				background-color: rgba(25, 23, 23, .1);
+			"
+		>
+			<i
+				class="nexmoefont icon-github"
+			></i> </a
+		><a
+			class="mdui-ripple"
+			href="https://www.zhihu.com/people/bo-lin-91-37"
+			target="_blank"
+			mdui-tooltip="{content: '知乎'}"
+			style="
+				color: rgb(30, 136, 229);
+				background-color: rgba(30, 136, 229, .1);
+			"
+		>
+			<i
+				class="nexmoefont icon-zhihu"
+			></i> </a
+		><a
+			class="mdui-ripple"
+			href="https://twitter.com/linxiaobaigxl"
+			target="_blank"
+			mdui-tooltip="{content: 'Twitter'}"
+			style="
+				color: rgb(59, 151, 239);
+				background-color: rgba(59, 151, 239, .1);
+			"
+		>
+			<i
+				class="nexmoefont icon-twitter"
+			></i> </a
+		><a
+			class="mdui-ripple"
+			href="/atom.xml"
+			target="_blank"
+			mdui-tooltip="{content: 'RSS'}"
+			style="
+				color: rgb(247, 132, 34);
+				background-color: rgba(247, 132, 34, .1);
+			"
+		>
+			<i
+				class="nexmoefont icon-rss"
+			></i> </a
+		>
+	</div>
+</div>
+
+    
+        
+        
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">文章分类</h3>
+    <div class="nexmoe-widget">
+
+      <ul class="category-list">
+
+        
+
+
+        
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/乐趣/">乐趣</a>
+          <span class="category-list-count">3</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/生活/">生活</a>
+          <span class="category-list-count">2</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/记录/">记录</a>
+          <span class="category-list-count">9</span>
+        </li>
+
+        
+      </ul>
+
+    </div>
+  </div>
+
+
+    
+        
+        
+  <div class="nexmoe-widget-wrap">
+    <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
+      <a href="/tags/Hello/" style="font-size: 15px;">Hello</a> <a href="/tags/develop/" style="font-size: 15px;">develop</a> <a href="/tags/life/" style="font-size: 10px;">life</a> <a href="/tags/test/" style="font-size: 20px;">test</a>
+    </div>
+    
+      <script>
+        var maxTagcloud = parseInt(17);
+        var tags_length = parseInt(4);
+        var tags_arr = [];
+        for(var i = 0; i < tags_length; i++){
+          tags_arr.push(i);
+        }
+        tags_arr.sort(function (l, r) {
+          return Math.random() > 0.5 ? -1 : 1;
+        });
+        tags_arr = tags_arr.slice(0, maxTagcloud < tags_length ? tags_length - maxTagcloud : 0);
+        for(var tag_i = 0; tag_i < tags_arr.length; tag_i++){
+          document.getElementById("randomtagcloud").children[tags_arr[tag_i]].style.display = 'none';
+        }
+      </script>
+    
+  </div>
+
+    
+        
+        
+        
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">文章归档</h3>
+    <div class="nexmoe-widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/">2026</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/">2025</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/">2024</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/">2023</a><span class="archive-list-count">4</span></li></ul>
+    </div>
+  </div>
+
+
+
+    
+        
+        
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">最新文章</h3>
+    <div class="nexmoe-widget">
+      <ul>
+        
+          <li>
+            <a href="/2026/08/05/%E8%AE%B0%E5%BD%95/%E5%BE%AE%E8%BD%AF%E5%95%86%E5%BA%97%E9%94%99%E8%AF%AF%200x800706D9%20%E4%BF%AE%E5%A4%8D%E8%AE%B0%E5%BD%95/">微软商店错误 0x800706D9 修复记录</a>
+          </li>
+        
+          <li>
+            <a href="/2025/06/29/%E8%AE%B0%E5%BD%95/%E8%AE%B0%E5%BD%95%E7%89%9B%E9%A9%AC%E4%B9%8B%E5%9F%8E%E5%8A%9E%E7%90%86laissez-passer/">记录牛马之城办理laissez-passer---花费时长十天（邮寄到家）😜👏🤔🐱‍👓🐱‍💻</a>
+          </li>
+        
+          <li>
+            <a href="/2025/02/06/%E8%AE%B0%E5%BD%95/2025%F0%9F%90%8D%E5%B9%B4%E5%A4%A7%E5%90%89/">2025🐍年大吉😜👏🤔🐱‍👓🐱‍💻</a>
+          </li>
+        
+          <li>
+            <a href="/2024/12/31/%E8%AE%B0%E5%BD%95/2024%E5%B9%B4%E6%9C%AB/">2024年年终-劇終！</a>
+          </li>
+        
+          <li>
+            <a href="/2024/12/02/%E8%AE%B0%E5%BD%95/%E5%85%B3%E4%BA%8ENAS%E5%B0%8F%E8%AE%B0%E5%BD%95/">关于NAS小记录</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+        
+        <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-link">
+		<ul>
+        
+            <li>
+                <a href="https://item.jd.com/100147630258.html#none" target="_blank" >
+                    <img src="https://gitee.com/gxlgemini/mypicture/raw/master/img/2024/AMDYES.webp" alt="广告位-AMD-YES"></img>
+                    <p>广告位-AMD-YES</p>
+                </a>
+            </li>
+        
+		</ul>
+    </div>
+</div>
+<style>
+.nexmoe-widget-wrap .nexmoe-link ul li a {
+    text-align : center;
+}
+.nexmoe-widget-wrap .nexmoe-link ul li a img {
+    max-width : 100%;
+}
+.nexmoe-widget-wrap .nexmoe-link ul li a p {
+    margin: 10px 0;
+}
+</style>
+
+    
+   
+    <div class="nexmoe-copyright">
+        &copy; 2026 雨西
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
+        <br><a target="_blank" href="https://beian.miit.gov.cn/"><img src="https://gitee.com/gxlgemini/mypicture/raw/master/img/2024/benan.webp" style="vertical-align: middle; margin-right: 4px; width: 18px; height: auto;">湘ICP备5820238666号</a>
+
+    </div>
+</div><!-- .nexmoe-drawer --></div><div id="nexmoe-content"><div class="nexmoe-primary"><div class="nexmoe-post">
+  <article>
+    
+        <div class="nexmoe-post-cover absolute" style="padding-top: 62.5%;"> 
+            <img src="https://gitee.com/GxlGemini/mypicture/raw/master/img/2026/2026%E5%B9%B48%E6%9C%885%E6%97%A5%2010_48_07.webp" alt="微软商店错误 0x800706D9 修复记录" loading="lazy">
+            <h1>微软商店错误 0x800706D9 修复记录</h1>
+        </div>
+    
+    
+    <div class="nexmoe-post-meta">
+    <div class="nexmoe-rainbow">
+        <a class="nexmoefont icon-calendar-fill">2026年08月05日</a>
+        
+            <a class="nexmoefont icon-appstore-fill -link" href="/categories/%E8%AE%B0%E5%BD%95/">记录</a>
+        
+        
+    </div>
+    
+    
+    
+    
+    
+</div>
+
+    <h1 id="微软商店错误-0x800706D9-修复记录"><a href="#微软商店错误-0x800706D9-修复记录" class="headerlink" title="微软商店错误 0x800706D9 修复记录"></a>微软商店错误 0x800706D9 修复记录</h1><h2 id="一、故障现象"><a href="#一、故障现象" class="headerlink" title="一、故障现象"></a>一、故障现象</h2><p>在 Windows 10 微软商店下载 Windows Terminal 时提示：</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><code class="hljs text">出现问题<br>请稍后再试<br>错误代码：0x800706D9<br></code></pre></td></tr></table></figure>
+
+<p>系统版本：</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><code class="hljs text">Windows 10 22H2<br>OS 内部版本：19045.6466<br></code></pre></td></tr></table></figure>
+
+<h2 id="二、原因分析"><a href="#二、原因分析" class="headerlink" title="二、原因分析"></a>二、原因分析</h2><h3 id="官方确认"><a href="#官方确认" class="headerlink" title="官方确认"></a>官方确认</h3><p>错误代码 <code>0x800706D9</code> 表示系统所需的服务没有运行，或者服务配置异常。常见关联服务包括：</p>
+<ul>
+<li>RPC Endpoint Mapper（RPC 终结点映射器）</li>
+<li>Remote Procedure Call（RPC，远程过程调用）</li>
+<li>Windows Defender Firewall（Windows Defender 防火墙）</li>
+</ul>
+<h3 id="本机实际情况"><a href="#本机实际情况" class="headerlink" title="本机实际情况"></a>本机实际情况</h3><p>检查发现以下服务均正常运行：</p>
+<ul>
+<li><code>RpcEptMapper</code>：RPC 终结点映射器</li>
+<li><code>RpcSs</code>：远程过程调用</li>
+<li><code>MpsSvc</code>：Windows Defender 防火墙</li>
+<li><code>BFE</code>：基本筛选引擎</li>
+<li><code>wlidsvc</code>：Microsoft 帐户登录助手</li>
+<li><code>InstallService</code>：Microsoft Store 安装服务</li>
+</ul>
+<p>但 <code>StorSvc</code>（存储服务）处于停止状态，并且被设置为“禁用”。</p>
+<p>手动启动时提示：</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><code class="hljs text">[SC] StartService 失败 1058:<br>无法启动服务，原因可能是已被禁用或与其相关联的设备没有启动。<br></code></pre></td></tr></table></figure>
+
+<p>因此，本次故障可以确定为：<strong>StorSvc 存储服务被禁用，导致微软商店无法正常完成应用下载和安装。</strong></p>
+<h2 id="三、检查相关服务"><a href="#三、检查相关服务" class="headerlink" title="三、检查相关服务"></a>三、检查相关服务</h2><p>以管理员身份运行 CMD（命令提示符），执行：</p>
+<figure class="highlight bat"><table><tr><td class="code"><pre><code class="hljs bat">sc query RpcEptMapper<br>sc query RpcSs<br>sc query MpsSvc<br>sc query BFE<br>sc query wlidsvc<br>sc query InstallService<br>sc query StorSvc<br></code></pre></td></tr></table></figure>
+
+<p>正常运行的服务应显示：</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><code class="hljs text">STATE : 4  RUNNING<br>WIN32_EXIT_CODE : 0  (0x0)<br>SERVICE_EXIT_CODE : 0  (0x0)<br></code></pre></td></tr></table></figure>
+
+<p>如果 <code>StorSvc</code> 显示：</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><code class="hljs text">STATE : 1  STOPPED<br></code></pre></td></tr></table></figure>
+
+<p>并且启动时返回错误 <code>1058</code>，说明该服务被禁用。</p>
+<h2 id="四、修复方法"><a href="#四、修复方法" class="headerlink" title="四、修复方法"></a>四、修复方法</h2><h3 id="1-解除-StorSvc-禁用状态"><a href="#1-解除-StorSvc-禁用状态" class="headerlink" title="1. 解除 StorSvc 禁用状态"></a>1. 解除 StorSvc 禁用状态</h3><p>在管理员 CMD 中执行：</p>
+<figure class="highlight bat"><table><tr><td class="code"><pre><code class="hljs bat">sc config StorSvc <span class="hljs-built_in">start</span>= demand<br></code></pre></td></tr></table></figure>
+
+<p>正常提示：</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><code class="hljs text">[SC] ChangeServiceConfig 成功<br></code></pre></td></tr></table></figure>
+
+<p>其中：</p>
+<ul>
+<li><code>StorSvc</code>：存储服务的系统服务名称。</li>
+<li><code>start= demand</code>：将启动类型设置为“手动&#x2F;按需启动”。</li>
+<li><code>start=</code> 后面必须保留一个空格。</li>
+</ul>
+<h3 id="2-启动存储服务"><a href="#2-启动存储服务" class="headerlink" title="2. 启动存储服务"></a>2. 启动存储服务</h3><p>执行：</p>
+<figure class="highlight bat"><table><tr><td class="code"><pre><code class="hljs bat">sc <span class="hljs-built_in">start</span> StorSvc<br></code></pre></td></tr></table></figure>
+
+<p>启动过程中可能暂时显示：</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><code class="hljs text">STATE : 2  START_PENDING<br></code></pre></td></tr></table></figure>
+
+<p>这表示服务正在启动，属于正常过渡状态。</p>
+<h3 id="3-验证服务状态"><a href="#3-验证服务状态" class="headerlink" title="3. 验证服务状态"></a>3. 验证服务状态</h3><p>执行：</p>
+<figure class="highlight bat"><table><tr><td class="code"><pre><code class="hljs bat">sc query StorSvc<br></code></pre></td></tr></table></figure>
+
+<p>正常结果应为：</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><code class="hljs text">STATE : 4  RUNNING<br>WIN32_EXIT_CODE : 0  (0x0)<br>SERVICE_EXIT_CODE : 0  (0x0)<br></code></pre></td></tr></table></figure>
+
+<p>这表示 StorSvc 已经正常运行。</p>
+<h3 id="4-重置微软商店缓存"><a href="#4-重置微软商店缓存" class="headerlink" title="4. 重置微软商店缓存"></a>4. 重置微软商店缓存</h3><p>按下 <code>Win + R</code>，输入：</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><code class="hljs text">wsreset.exe<br></code></pre></td></tr></table></figure>
+
+<p>等待命令窗口自动关闭、微软商店重新打开，然后再次下载应用。</p>
+<h2 id="五、最终结果"><a href="#五、最终结果" class="headerlink" title="五、最终结果"></a>五、最终结果</h2><p>完成以下操作后，微软商店恢复正常，可以成功下载 Windows Terminal：</p>
+<figure class="highlight bat"><table><tr><td class="code"><pre><code class="hljs bat">sc config StorSvc <span class="hljs-built_in">start</span>= demand<br>sc <span class="hljs-built_in">start</span> StorSvc<br>wsreset.exe<br></code></pre></td></tr></table></figure>
+
+<p>本次故障的实际原因是：</p>
+<blockquote>
+<p>StorSvc（存储服务）被设置为“禁用”，导致微软商店应用下载和安装功能异常。将其恢复为“手动&#x2F;按需启动”并启动服务后，问题解决。</p>
+</blockquote>
+<h2 id="六、常见状态和错误代码"><a href="#六、常见状态和错误代码" class="headerlink" title="六、常见状态和错误代码"></a>六、常见状态和错误代码</h2><table>
+<thead>
+<tr>
+<th>状态或代码</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>STATE : 1 STOPPED</code></td>
+<td>服务已经停止</td>
+</tr>
+<tr>
+<td><code>STATE : 2 START_PENDING</code></td>
+<td>服务正在启动</td>
+</tr>
+<tr>
+<td><code>STATE : 4 RUNNING</code></td>
+<td>服务正常运行</td>
+</tr>
+<tr>
+<td>错误 <code>1056</code></td>
+<td>服务已经在运行，无需再次启动</td>
+</tr>
+<tr>
+<td>错误 <code>1058</code></td>
+<td>服务被禁用，必须先修改启动类型</td>
+</tr>
+<tr>
+<td><code>WIN32_EXIT_CODE : 0</code></td>
+<td>服务没有系统级错误</td>
+</tr>
+</tbody></table>
+<h2 id="七、注意事项"><a href="#七、注意事项" class="headerlink" title="七、注意事项"></a>七、注意事项</h2><ol>
+<li>相关命令需要在“管理员身份”的 CMD 中运行。</li>
+<li>StorSvc 设置为“手动&#x2F;按需启动”即可，不需要强制设置为自动。</li>
+<li>电脑重启后，StorSvc 可能再次显示“已停止”，这是按需启动服务的正常现象。</li>
+<li>只要启动类型不是“禁用”，系统需要时便可以调用该服务。</li>
+<li>如果服务正常但商店仍不能下载，可以进一步尝试“修复&#x2F;重置 Microsoft Store”，或者运行：</li>
+</ol>
+<figure class="highlight bat"><table><tr><td class="code"><pre><code class="hljs bat">DISM /Online /Cleanup-Image /RestoreHealth<br>sfc /scannow<br></code></pre></td></tr></table></figure>
+
+<h2 id="八、参考资料"><a href="#八、参考资料" class="headerlink" title="八、参考资料"></a>八、参考资料</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://learn.microsoft.com/en-us/troubleshoot/windows-client/installing-updates-features-roles/troubleshoot-windows-update-error-0x800706d9">微软：排查错误代码 0x800706D9</a></li>
+<li><a target="_blank" rel="noopener" href="https://support.microsoft.com/en-us/accounts-billing/microsoft-store-doesn-t-open">微软：重置 Microsoft Store 缓存</a></li>
+</ul>
+
+    
+  </article>
+
+  
+      
+    <div class="nexmoe-post-copyright">
+        <strong>本文作者：</strong>雨西<br>
+        <strong>本文链接：</strong><a href="https://gxlgemini.github.io/2026/08/05/%E8%AE%B0%E5%BD%95/%E5%BE%AE%E8%BD%AF%E5%95%86%E5%BA%97%E9%94%99%E8%AF%AF%200x800706D9%20%E4%BF%AE%E5%A4%8D%E8%AE%B0%E5%BD%95/" title="https:&#x2F;&#x2F;gxlgemini.github.io&#x2F;2026&#x2F;08&#x2F;05&#x2F;%E8%AE%B0%E5%BD%95&#x2F;%E5%BE%AE%E8%BD%AF%E5%95%86%E5%BA%97%E9%94%99%E8%AF%AF%200x800706D9%20%E4%BF%AE%E5%A4%8D%E8%AE%B0%E5%BD%95&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;gxlgemini.github.io&#x2F;2026&#x2F;08&#x2F;05&#x2F;%E8%AE%B0%E5%BD%95&#x2F;%E5%BE%AE%E8%BD%AF%E5%95%86%E5%BA%97%E9%94%99%E8%AF%AF%200x800706D9%20%E4%BF%AE%E5%A4%8D%E8%AE%B0%E5%BD%95&#x2F;</a><br>
+        
+            <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+
+        
+    </div>
+
+
+  
+  
+  <div class="nexmoe-post-meta nexmoe-rainbow">
+   
+    
+        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/test/" rel="tag">test</a>
+    
+</div>
+  
+  
+    <script async src="/js/copy-codeblock.js?v=1785899635701"></script>
+  
+
+  
+      <div class="nexmoe-post-footer">
+          <br><div class="server-countdown">
+  <p class="title">网站倒计时 - 服务器到期提醒</p><br><p><span id="days">0</span>Days</p><p><span id="hours">0</span>Hours</p><p><span id="minutes">0</span>Minutes</p><p><span id="seconds">0</span>Seconds</p></div><link rel="stylesheet" href="/css/pinglun.css"><script src="/js/countdown.js"></script>
+
+      </div>
+  
+</div></div><div class="nexmoe-post-right">    <div class="nexmoe-fixed">
+        <div class="nexmoe-tool">
+
+            
+
+            
+            
+            <button class="mdui-fab catalog" style="overflow:unset;">
+                <i class="nexmoefont icon-i-catalog"></i>
+                <div class="nexmoe-toc">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BE%AE%E8%BD%AF%E5%95%86%E5%BA%97%E9%94%99%E8%AF%AF-0x800706D9-%E4%BF%AE%E5%A4%8D%E8%AE%B0%E5%BD%95"><span class="toc-number">1.</span> <span class="toc-text">微软商店错误 0x800706D9 修复记录</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E6%95%85%E9%9A%9C%E7%8E%B0%E8%B1%A1"><span class="toc-number">1.1.</span> <span class="toc-text">一、故障现象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90"><span class="toc-number">1.2.</span> <span class="toc-text">二、原因分析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%98%E6%96%B9%E7%A1%AE%E8%AE%A4"><span class="toc-number">1.2.1.</span> <span class="toc-text">官方确认</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%AC%E6%9C%BA%E5%AE%9E%E9%99%85%E6%83%85%E5%86%B5"><span class="toc-number">1.2.2.</span> <span class="toc-text">本机实际情况</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E6%A3%80%E6%9F%A5%E7%9B%B8%E5%85%B3%E6%9C%8D%E5%8A%A1"><span class="toc-number">1.3.</span> <span class="toc-text">三、检查相关服务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E4%BF%AE%E5%A4%8D%E6%96%B9%E6%B3%95"><span class="toc-number">1.4.</span> <span class="toc-text">四、修复方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E8%A7%A3%E9%99%A4-StorSvc-%E7%A6%81%E7%94%A8%E7%8A%B6%E6%80%81"><span class="toc-number">1.4.1.</span> <span class="toc-text">1. 解除 StorSvc 禁用状态</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%90%AF%E5%8A%A8%E5%AD%98%E5%82%A8%E6%9C%8D%E5%8A%A1"><span class="toc-number">1.4.2.</span> <span class="toc-text">2. 启动存储服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E9%AA%8C%E8%AF%81%E6%9C%8D%E5%8A%A1%E7%8A%B6%E6%80%81"><span class="toc-number">1.4.3.</span> <span class="toc-text">3. 验证服务状态</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E9%87%8D%E7%BD%AE%E5%BE%AE%E8%BD%AF%E5%95%86%E5%BA%97%E7%BC%93%E5%AD%98"><span class="toc-number">1.4.4.</span> <span class="toc-text">4. 重置微软商店缓存</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E6%9C%80%E7%BB%88%E7%BB%93%E6%9E%9C"><span class="toc-number">1.5.</span> <span class="toc-text">五、最终结果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD%E3%80%81%E5%B8%B8%E8%A7%81%E7%8A%B6%E6%80%81%E5%92%8C%E9%94%99%E8%AF%AF%E4%BB%A3%E7%A0%81"><span class="toc-number">1.6.</span> <span class="toc-text">六、常见状态和错误代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%83%E3%80%81%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-number">1.7.</span> <span class="toc-text">七、注意事项</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AB%E3%80%81%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="toc-number">1.8.</span> <span class="toc-text">八、参考资料</span></a></li></ol></li></ol>
+                </div>
+            </button>
+            
+
+            
+
+            <a href="#nexmoe-content" class="backtop toc-link" aria-label="Back To Top" title="top"><button class="mdui-fab mdui-ripple"><i class="nexmoefont icon-caret-top"></i></button></a>
+        </div>
+    </div>
+</div></div><div id="nexmoe-footer"><!--!--></div><div id="nexmoe-search-space"><div class="search-container"><div class="search-header"><div class="search-input-container"><input class="search-input" type="text" placeholder="搜索" onInput="sinput();"></div><a class="search-close" onclick="sclose();">×</a></div><div class="search-body"></div></div></div><div></div></body></html>
