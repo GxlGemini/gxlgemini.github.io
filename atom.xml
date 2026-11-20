@@ -6,7 +6,7 @@
   <link href="https://gxlgemini.github.io/atom.xml" rel="self"/>
   
   <link href="https://gxlgemini.github.io/"/>
-  <updated>2026-08-05T03:08:29.124Z</updated>
+  <updated>2026-11-20T08:22:47.767Z</updated>
   <id>https://gxlgemini.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Things you must do before running</title>
+    <link href="https://gxlgemini.github.io/2026/11/20/%E8%AE%B0%E5%BD%95/Things%20you%20must%20do%20before%20running/"/>
+    <id>https://gxlgemini.github.io/2026/11/20/%E8%AE%B0%E5%BD%95/Things%20you%20must%20do%20before%20running/</id>
+    <published>2026-11-20T03:03:36.000Z</published>
+    <updated>2026-11-20T08:22:47.767Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ul><li><input disabled="" type="checkbox"> <font>去躺广州中山大学医院—颌面科室，时间周四、周五（需要不同周分别请假）</font></li><li><input disabled="" type="checkbox"> 去躺香港、澳门（需要再次把签注给续上，南山可以比较近）</li><li><input disabled="" type="checkbox"> E照过年在家里练习一下午就可以了，然后考不考过都无所谓了。 （没过那就plan B呗）</li><li><input disabled="" type="checkbox"> 宝安中心医院洗牙，也需要请假吧</li></ul><hr><p><strong>Windows 10 专业版 22H2 支持离线安装英文显示语言包</strong></p><ol><li>在联网电脑上下载 **<a href="https://software-download.microsoft.com/download/pr/19041.1.191206-1406.vb_release_CLIENTLANGPACKDVD_OEM_MULTI.iso">微软官方 Windows 10 语言包 ISO</a>**。认准文件名里的 **<code>CLIENTLANGPACKDVD</code>**。</li><li>下载后右键这个文件，选择 <strong>装载</strong>。打开“此电脑”里<strong>新出现的 DVD 驱动器</strong>，依次进入 **<code>x64</code> → <code>langpacks</code>**。</li><li>把 <strong><code>Microsoft-Windows-Client-Language-Pack_x64_en-us.cab</code></strong> 复制到 U 盘。在离线电脑上按 **<code>Win + R</code>**，输入 **<code>lpksetup</code>**，选择 <strong>安装显示语言 → 浏览</strong>，选中这个文件即可。</li></ol><p><a href="https://gitee.com/GxlGemini/mypicture/raw/master/img/2026/install-language.webp"></a></p><p><a href="https://gitee.com/GxlGemini/mypicture/raw/master/img/2026/installover.webp"></a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="记录" scheme="https://gxlgemini.github.io/categories/%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="Hello" scheme="https://gxlgemini.github.io/tags/Hello/"/>
+    
+  </entry>
   
   <entry>
     <title>微软商店错误 0x800706D9 修复记录</title>
@@ -45,7 +69,7 @@
     <link href="https://gxlgemini.github.io/2025/06/29/%E8%AE%B0%E5%BD%95/%E8%AE%B0%E5%BD%95%E7%89%9B%E9%A9%AC%E4%B9%8B%E5%9F%8E%E5%8A%9E%E7%90%86laissez-passer/"/>
     <id>https://gxlgemini.github.io/2025/06/29/%E8%AE%B0%E5%BD%95/%E8%AE%B0%E5%BD%95%E7%89%9B%E9%A9%AC%E4%B9%8B%E5%9F%8E%E5%8A%9E%E7%90%86laissez-passer/</id>
     <published>2025-06-29T03:03:36.000Z</published>
-    <updated>2025-07-04T01:55:54.379Z</updated>
+    <updated>2026-11-20T08:13:43.003Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ul><li><p><strong><a href="">今日主题柯兰</a></strong></p><p><img onerror="imgOnError(this);" data-fancybox="gallery" src="https://gitee.com/gxlgemini/mypicture/raw/master/img/2025/laissez-passer/%E3%80%90%E5%93%B2%E9%A3%8E%E5%A3%81%E7%BA%B8%E3%80%91%E5%8A%A8%E6%BC%AB%E8%A7%92%E8%89%B2-%E5%90%8D%E4%BE%A6%E6%8E%A2%E6%9F%AF%E5%8D%97.webp" alt="【哲风壁纸】动漫角色-名侦探柯南" data-caption="【哲风壁纸】动漫角色-名侦探柯南" loading="lazy"></p></li></ul><h5 id="记录牛马之城办理laissez-passer-——花费时长十天（邮寄到家）"><a href="#记录牛马之城办理laissez-passer-——花费时长十天（邮寄到家）" class="headerlink" title="记录牛马之城办理laissez-passer           ——花费时长十天（邮寄到家）"></a>记录牛马之城办理laissez-passer           ——花费时长十天（邮寄到家）</h5><p><img src="https://gitee.com/gxlgemini/mypicture/raw/master/img/2025/laissez-passer/kuaidi1.webp"></p><hr><p>…….明天再写。。。。</p>]]></content>
     
